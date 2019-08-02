@@ -1,0 +1,136 @@
+bluehost
+imt.ilu.mybluehost.me
+snUB5hD8P-84zAm
+
+http://imt.ilu.mybluehost.me/lawyer_admin/public
+
+https://stackoverflow.com/questions/28788285/how-to-run-laravel-without-artisan
+
+message sending api
+http://localhost/lawyer_admin/public/clientSendMessage?userid=12345333&message=Hello
+
+http://localhost/lawyer_admin/public/clientSendMessage?phone=12345333&message=okok
+ Route::get('/clientGetNewMessage', 'chattingController@clientGetNewMessage');
+    Route::get('/clientGetAllMessages', 'chattingController@clientGetAllMessages');
+    Route::get('/clientSetReadStatus', 'chattingController@clientSetReadStatus');
+    Route::get('/clientSendMessage', 'chattingController@clientSendMessage');
+
+---user----
+ remove adduser and edit button
+----menu
+ menu   -  content
+  submenu - content
+
+ check extension
+   if(.html)   
+
+  if(.rar) 
+  $archive = RarArchive::open('archive.rar');
+  $entries = $archive->getEntries();
+  foreach ($entries as $entry) {
+     $entry->extract('/extract/to/this/path');
+  }
+  $archive->close();
+  https://php.net/manual/en/rarentry.extract.php
+----chatting ----
+	Date must be: DD/MM/YYYY and HH:MM
+	Server must be able to know if user read mesage
+	on buble, I need to add amound(10$) and paid or unpaid status.
+	web api - (chatting table, paid or unpiad)
+
+	unread mark if user read message or not
+
+        and then add free checkbox
+
+	change erase icon
+	are u sure?  yes or no
+-----------------------
+List Apis
+
+//api urls
+//http://localhost/lawyer_admin/public/setReadState?userid=4382190849
+//http://localhost/lawyer_admin/public/setPaidState?id=19
+//http://localhost/lawyer_admin/public/clientGetNewMessage?userid=123
+//http://localhost/lawyer_admin/public/clientGetAllMessages?userid=123
+//http://localhost/lawyer_admin/public/clientSendMessage?userid=123 && message=Hello
+//http://localhost/lawyer_admin/public/clientGetMenus
+//http://localhost/lawyer_admin/public/clientGetSubMenus
+//http://localhost/lawyer_admin/public/clientGetAllMenus
+//http://localhost/lawyer_admin/public/client_signup?name=John&&phone=123&&address=Riverdale%2098
+------------------------
+
+http://imt.ilu.mybluehost.me/lawyer_admin/public/clientSendMessage?userid=123&message=okok
+
+http://localhost/lawyer_admin/public/clientSendMessage?userid=12345333&message=okok
+
+
+
+Europe/Berlin
+
+Additional Features 
+1. I see. later we can discuss price for app disable screenshot function
+
+2. Another feature u can tell me the price is the typical: "how would u rate the app"..
+Wich show a message box with five stars and u select how many stars
+And if u select 5, it send u to Playstore to rate
+If less that 5 (eventualy 4) nothing happens
+
+
+
+https://github.com/timigod/android-chat-ui/tree/master/chat-ui/src/main
+
+
+
+AbogApp
+
+Request_Login: 
+
+Dont need a login. App will make a "just one time" registrartion. Then I will keep logued. The best way to do this is to ask for some basic information like: name, apellido, domicilio (drop list: "Capital Federal", "Gran Buenos Aires"), cellphone number. I would be great to have a phone validation. Like Whastapp, Tinder, etc.
+
+Request_messages: 
+
+It must like whatsapp. Backgroud, rounded squares, hour sent-recived and admin must see if client read message in backend (client must not see that). Chat windows must feel friendly and known.. like whatsapp. User must feel confortable.
+
+Information_menu1 and Infos_submenu:
+
+Must adapt the screen size. If the size is like in the picture, then height must be higher (increase height parameter). Else it feels ugly. It must keep some aspect ratio.
+
+Request_paypal:
+
+Picture is blur. But the request is payment windows to be the simple as possible. We do not want to confuse customers in the most important step: payment.
+
+Infos_content:
+
+Content must be customizable from backend. The idea is simple: all hierarchical list (menus and submenus) and final content must be set from backend. The final content must be customized like a mail. Images, formatted text, that kinda basic elements.
+
+
+
+1. name, apellido, domicilio (drop list: "Capital Federal", "Gran Buenos Aires"), cellphone number. I would be great to have a phone validation. Like Whastapp, Tinder, etc.
+For this, we have not discussed first time, This is new requirement.
+
+If register by userid and password, it's ok.
+
+2. I will change colors, and add hour(sent-received) if you want.
+3. I will make higher.
+4. blur payment picture is just image. 
+in app, standard paypal payment screen will be displayed.
+because I use paypal sdk, we don't need to change payment screen.
+Just googling "android paypal image". You can see images.
+
+5. because content must be customizable, I need to make web api that communicate with backend database. 
+in design, just displayed dummy data.
+
+The final content will be mail, one image(not several images), formatted text just like pdf you sent me. 
+
+
+
+For App development the order of the screens is: 
+
+1) Spashscreen
+2) Register Screen (1st time only)
+3) Terms of use (1st time only)
+4) Tabs screen
+
+db is imtilumy_lawyer
+user is imtilumy_WPNBH
+password is ElPerri6969
