@@ -1,0 +1,29 @@
+1) User and server messages must exchange position and styles in the App. 
+- User: text on the right and no image.
+- Server: text on the left and with image.
+In addition, the image chosen in the Backend must match that shown in the App for the server.
+
+2) App side chat is NOT refreshing server messages. To see them, you must exit the App and re-enter. That way it loads correctly. This must be corrected and the refreshment must be automatic, just like in whatsapp.
+
+3) A basic push notification is required to notify the user that there are new messages when they are out of the App. This function is basic in any type of chat.
+
+4) Sending files seems to work but has some details that need to be improved:
+- The delivery takes a long time and desynchronizes the conversation.
+- Receiving the files in the App must have an image that guides the user. Ex: if a pdf is received, the preview of the file and, in case this is very complex, a photo of a typical icon of a pdf file: https://smartcoversystems.com/wp-content/uploads/2017/ 03 / PDF-download-icon-47146508-updated.jpg
+The image, on the other hand, if sent in jpg, png, bmp, etc. format, should show the preview of it.
+- Files must be sent to the user's device, not be a link to the server. Because that would give the user URL information, a URL that you should not know.
+
+5) Backbutton behavior in the App.
+- being in the Chat tab the backbutton should lead to the information tab. And being in the information tab, the backbutton must have to be pressed 2 times in a row to exit the App, otherwise, it does not close the App and stays in the information menu. Then: tap once and toast a message: "Tap twice to quit". If the user clicks again, in less than 3 seconds, he leaves the app. If you don't do anything and the next time you touch the backbutton repeat step 1.
+
+6) you would have to configure the Paypal sandbox to be able to perform payment simulations and test this function, which is important.
+
+7) the process of validation / verification of user still does not work as such. Anyone can register with any number.
+
+8) why are you asking for privileges of:
+- Camera
+- Get Accounts
+- Read Phone State ??
+I want to avoid asking for unnecessary privileges because it discourages the user and scares him. That's why I consult what they are used for.
+
+9) In the backend, when entering a new message, the chat that corresponds to that message does not rise to the top. In turn, when sending a new message from the Backend the screen is not scrolling in the background.
